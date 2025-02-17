@@ -1,47 +1,76 @@
-# Commit AI :rocket:
+# @aigen/commit-gen 🚀  
 
-AI-powered commit message generator powered by OpenAI. Get meaningful commit messages in seconds!
+AI-powered commit message generator using OpenAI. Get meaningful and structured commit messages in seconds!  
+ 
 
-[![npm version](https://img.shields.io/npm/v/commit-ai)](https://www.npmjs.com/package/commit-ai)
+[![NPM Version](https://img.shields.io/npm/v/fireorm.svg?style=flat)](https://www.npmjs.com/package/@aigen/commit-gen)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) 
+---
 
-## Installation
+## ✨ Features  
+
+✅ **AI-generated Commit Messages** – Get clear and structured commit messages based on your Git changes.  
+✅ **Conventional Commit Format** – Generates messages following best practices.  
+✅ **Interactive Workflow** – Review and confirm before committing.  
+✅ **Secure API Key Storage** – Stores your OpenAI API key locally.  
+
+---
+
+## 🚀 Installation  
+
+No need to install globally. Use it directly via `npx`:  
 
 ```bash
-npx commit-ai generate  # Generate commit message
+npx @aigen/commit-gen generate  # Generate commit message
 ```
-Usage
 
-Generate Commit Message
-
-bash
-Copy
-npx commit-ai
-# or
-git gpt  # If aliased
-Configure OpenAI Key
+Alternatively, install globally:
 
 ```bash
-npx commit-ai configure
-npx commit-ai g  // use alias instead
+npm install -g @aigen/commit-gen
 ```
-Stores your API key securely in `~/.env`
 
-# How It Works
+## 🔥 Usage
+- When you run the generate command for the first time it will prompt you to add your OpenAI API key.
 
-1. Analyzes git staged changes
-2. Sends diff to OpenAI API
-3. Generates conventional commit message
-4. Verifies with user before committing
+Generate a Commit Message
 
-# Security
+```bash
+npx @aigen/commit-gen generate
+// or
+npx @aigen.commit-gen g
+```
 
-Your OpenAI key is stored locally in `~/.env` and never transmitted elsewhere.
+## Configure OpenAI API Key
+```bash
+npx @aigen/commit-gen configure
+```
 
-# Contributing
+This securely stores your API key in `~/.env`.
 
-PRs welcome! See CONTRIBUTING.md
+Commit with AI-generated Message
+```bash
+git add .
+npx @aigen/commit-gen generate
+```
+After generating the commit message, you’ll be asked to confirm before it is committed.
 
-# License
+🔍 How It Works
 
-MIT
+1. Analyzes Git staged changes `(git diff --staged)`.
+2. Sends the diff to the OpenAI API for analysis.
+3. Generates a structured and meaningful commit message.
+4. Prompts for user confirmation before committing.
 
+## 🔒 Security
+
+Your OpenAI API key is stored locally in `~/.env` and never shared or transmitted elsewhere.
+The tool only analyzes staged Git changes, ensuring sensitive files remain untouched.
+🤝 Contributing
+
+PRs are welcome! If you’d like to improve the tool, check out `CONTRIBUTING.md` for guidelines.
+
+## 📜 License
+
+This project is licensed under the MIT License. See LICENSE for details.
