@@ -14,7 +14,7 @@ export const Logger = createLogger({
 
 export const setupLogger = () => {
   // Only log the initialization message in development
-  if (process.env.NODE_ENV !== 'production') {
-    Logger.info('Logger initialized');
-  }
+  // if (process.env.NODE_ENV !== 'production') {
+    // Logger.info('Logger initialized');
+  // }
 };
