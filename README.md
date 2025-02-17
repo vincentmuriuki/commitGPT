@@ -1,9 +1,9 @@
-# commitly 🚀  
+# commitaai 🚀  
 
 AI-powered commit message generator using OpenAI. Get meaningful and structured commit messages in seconds!  
  
 
-[![NPM Version](https://img.shields.io/npm/v/fireorm.svg?style=flat)](https://www.npmjs.com/package/commitly)
+[![NPM Version](https://img.shields.io/npm/v/fireorm.svg?style=flat)](https://www.npmjs.com/package/commitaai)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) 
 ---
@@ -22,13 +22,13 @@ AI-powered commit message generator using OpenAI. Get meaningful and structured 
 No need to install globally. Use it directly via `npx`:  
 
 ```bash
-npx commitly generate  # Generate commit message
+npx commitaai generate  # Generate commit message
 ```
 
 Alternatively, install globally:
 
 ```bash
-npm install -g commitly
+npm install -g commitaai
 ```
 
 ## 🔥 Usage
@@ -37,14 +37,14 @@ npm install -g commitly
 Generate a Commit Message
 
 ```bash
-npx commitly generate
+npx commitaai generate
 // or
-npx commitly g
+npx commitaai g
 ```
 
 ## Configure OpenAI API Key
 ```bash
-npx commitly configure
+npx commitaai configure
 ```
 
 This securely stores your API key in `~/.env`.
@@ -52,7 +52,7 @@ This securely stores your API key in `~/.env`.
 Commit with AI-generated Message
 ```bash
 git add .
-npx commitly generate
+npx commitaai generate
 ```
 After generating the commit message, you’ll be asked to confirm before it is committed.
 
@@ -73,4 +73,4 @@ PRs are welcome! If you’d like to improve the tool, check out `CONTRIBUTING.md
 
 ## 📜 License
 
-This project is licensed under the MIT License. See LICENSE for details.
+MIT © [Vincent Muriuki](https://github.com/vincentmuriuki). See [LICENSE](https://github.com/vincentmuriuki/commitaai/blob/master/LICENSE) for details.
