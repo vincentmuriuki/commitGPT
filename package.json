@@ -1,5 +1,5 @@
 {
-  "name": "ai-commit-gen",
+  "name": "@aigen/commit-gen",
   "bin": {
     "@aigen/commit-gen": "cli/index.js"
   },
