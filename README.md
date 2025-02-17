@@ -1,9 +1,9 @@
-# @aigen/commit-gen 🚀  
+# commitly 🚀  
 
 AI-powered commit message generator using OpenAI. Get meaningful and structured commit messages in seconds!  
  
 
-[![NPM Version](https://img.shields.io/npm/v/fireorm.svg?style=flat)](https://www.npmjs.com/package/@aigen/commit-gen)
+[![NPM Version](https://img.shields.io/npm/v/fireorm.svg?style=flat)](https://www.npmjs.com/package/commitly)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) 
 ---
@@ -22,13 +22,13 @@ AI-powered commit message generator using OpenAI. Get meaningful and structured 
 No need to install globally. Use it directly via `npx`:  
 
 ```bash
-npx @aigen/commit-gen generate  # Generate commit message
+npx commitly generate  # Generate commit message
 ```
 
 Alternatively, install globally:
 
 ```bash
-npm install -g @aigen/commit-gen
+npm install -g commitly
 ```
 
 ## 🔥 Usage
@@ -37,14 +37,14 @@ npm install -g @aigen/commit-gen
 Generate a Commit Message
 
 ```bash
-npx @aigen/commit-gen generate
+npx commitly generate
 // or
-npx @aigen.commit-gen g
+npx commitly g
 ```
 
 ## Configure OpenAI API Key
 ```bash
-npx @aigen/commit-gen configure
+npx commitly configure
 ```
 
 This securely stores your API key in `~/.env`.
@@ -52,7 +52,7 @@ This securely stores your API key in `~/.env`.
 Commit with AI-generated Message
 ```bash
 git add .
-npx @aigen/commit-gen generate
+npx commitly generate
 ```
 After generating the commit message, you’ll be asked to confirm before it is committed.
 
