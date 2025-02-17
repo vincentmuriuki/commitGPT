@@ -10,6 +10,7 @@ const command = new Command('generate')
   .alias('g')
   .description('Generate a commit message based on git diff')
   .action(async () => {
+    process.noDeprecation = true;
     const spinner = showSpinner('Fetching git diff...');
     try {
       const diff = await fetchGitDiff();
