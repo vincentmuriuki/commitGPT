@@ -20,7 +20,8 @@
     "winston": "^3.17.0"
   },
   "scripts": {
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prepare": "husky"
   },
   "version": "0.0.1",
   "publishConfig": {
@@ -35,6 +36,18 @@
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "eslint": "^9.20.1",
-    "globals": "^15.15.0"
+    "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "lint-staged": "15.4.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
