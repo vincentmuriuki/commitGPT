@@ -6,7 +6,6 @@
   "main": "./cli/index.js",
   "type": "module",
   "dependencies": {
-    "ai-commit-gen": "^1.0.0",
     "axios": "^1.7.9",
     "chalk": "5.4.1",
     "commander": "13.1.0",
