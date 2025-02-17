@@ -39,7 +39,7 @@ npm install -g commitaai
 Generate a Commit Message
 
 ```bash
-npx commitaai generate
+npx commitaai generate // youll be prompted to add your openai api key
 // or
 npx commitaai g
 ```
