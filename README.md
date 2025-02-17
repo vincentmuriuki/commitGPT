@@ -46,7 +46,7 @@ npx commitaai g
 
 ## Configure OpenAI API Key
 ```bash
-npx commitaai configure
+npx commitaai configure // add your api key
 ```
 
 This securely stores your API key in `~/.env`.
