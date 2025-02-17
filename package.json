@@ -1,7 +1,7 @@
 {
-  "name": "commitai",
+  "name": "commitaai",
   "bin": {
-    "commitai": "cli/index.js"
+    "commitaai": "cli/index.js"
   },
   "main": "./cli/index.js",
   "type": "module",
@@ -22,6 +22,6 @@
 		"access": "public"
 	},
   "keywords": [
-		"commitai"
+		"commitaai"
 	]
 }
