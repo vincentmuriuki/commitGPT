@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from "commander";
 import generateCommand from "./commands/generate.js";
 import configureCommand from "./commands/configureCommand.js"
