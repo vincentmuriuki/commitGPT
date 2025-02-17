@@ -1,7 +1,7 @@
 {
   "name": "ai-commit-generator",
   "bin": {
-    "ai-commit": "./cli/index.js"
+    "ai-commit": "cli/index.js"
   },
   "main": "./cli/index.js",
   "type": "module",
@@ -16,5 +16,6 @@
     "simple-git": "^3.27.0",
     "typescript": "5.7.3",
     "winston": "^3.17.0"
-  }
+  },
+  "version": "1.0.0"
 }
