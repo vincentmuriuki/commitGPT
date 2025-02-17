@@ -14,7 +14,7 @@ program
   .name("commitaai")
   .description("Generate AI-crafted commit messages")
   // .option("-g, --generate", "Generate a commit message")
-  .version("1.0.2");
+  .version("1.0.3");
 
 program.addCommand(generateCommand);
 program.addCommand(configureCommand)
