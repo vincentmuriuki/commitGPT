@@ -43,7 +43,7 @@ const command = new Command('generate')
       if (shouldCommit) {
         exec(
           `git commit -m "${formattedMessage.replace(/"/g, '\\"')}"`,
-          (err, stdout, stderr) => {
+          (err) => {
             if (err) {
               console.error('Error committing changes:', err);
               return;

@@ -19,6 +19,9 @@
     "whatwg-url": "^14.1.1",
     "winston": "^3.17.0"
   },
+  "scripts": {
+    "lint:fix": "eslint --fix"
+  },
   "version": "0.0.1",
   "publishConfig": {
     "access": "public"
@@ -28,5 +31,10 @@
   ],
   "resolutions": {
     "whatwg-url": "^14.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "globals": "^15.15.0"
   }
 }
