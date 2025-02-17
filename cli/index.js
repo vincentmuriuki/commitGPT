@@ -11,7 +11,7 @@ const program = new Command();
 setupLogger();
 
 program
-  .name("commitly")
+  .name("commitai")
   .description("Generate AI-crafted commit messages")
   // .option("-g, --generate", "Generate a commit message")
   .version("1.0.2");
