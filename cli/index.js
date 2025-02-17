@@ -14,7 +14,7 @@ program
   .name("@aigen/commit-gen")
   .description("Generate AI-crafted commit messages")
   // .option("-g, --generate", "Generate a commit message")
-  .version("1.0.0");
+  .version("1.0.1");
 
 program.addCommand(generateCommand);
 program.addCommand(configureCommand)
