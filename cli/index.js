@@ -15,7 +15,7 @@ setupLogger();
 program
   .name("commitaai")
   .description(chalk.blue("Generate AI-crafted commit messages"))
-  .version("1.0.5")
+  .version("0.0.1")
   .addCommand(generateCommand)
   .command("configure")
   .description("Update or set OpenAI API key")
