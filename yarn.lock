@@ -201,6 +201,22 @@ agentkeepalive@^4.2.1:
   dependencies:
     humanize-ms "^1.2.1"
 
+ai-commit-gen@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ai-commit-gen/-/ai-commit-gen-1.0.0.tgz#929d3e91683078c4bbb0763906f691bd3f5c85f2"
+  integrity sha512-H0tGTrkEjSZlkgLUyOuMGaQIV1k90jnLf/ixVvZMuKsi9IPdpFORkBC7YEknnbFA1gFUYUew1ELNwIe2QfQifw==
+  dependencies:
+    axios "^1.7.9"
+    chalk "5.4.1"
+    commander "13.1.0"
+    dotenv "^16.4.7"
+    inquirer "^12.4.1"
+    openai "4.83.0"
+    ora "8.2.0"
+    simple-git "^3.27.0"
+    typescript "5.7.3"
+    winston "^3.17.0"
+
 ansi-escapes@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-4.3.2.tgz#6b2291d1db7d98b6521d5f1efa42d0f3a9feb65e"
