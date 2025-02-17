@@ -1,6 +1,8 @@
 # commitaai 🚀  
 
-AI-powered commit message generator using OpenAI. Get meaningful and structured commit messages in seconds!  
+`commitaai` is a powerful npm package designed to automate the creation of commit messages. By leveraging AI, it analyzes the changes you've staged in your project and generates well-structured and meaningful commit messages. With just a simple command, commitaai identifies the differences in your code, then crafts a concise title and description for your commit. This helps you save time, maintain consistency, and adhere to conventional commit practices, making version control more efficient. Ideal for developers looking to simplify their workflow and ensure their commit messages are clear, relevant, and uniform.
+
+Whether you're a solo developer or part of a team, `commitaai` helps improve your project’s version history by maintaining clean and descriptive commit messages. It’s the perfect tool for developers who want to boost their efficiency and keep their codebase organized. 
  
 
 [![NPM Version](https://img.shields.io/npm/v/fireorm.svg?style=flat)](https://www.npmjs.com/package/commitaai)
@@ -67,7 +69,8 @@ After generating the commit message, you’ll be asked to confirm before it is c
 
 Your OpenAI API key is stored locally in `~/.env` and never shared or transmitted elsewhere.
 The tool only analyzes staged Git changes, ensuring sensitive files remain untouched.
-🤝 Contributing
+
+# 🤝 Contributing
 
 PRs are welcome! If you’d like to improve the tool, check out `CONTRIBUTING.md` for guidelines.
 

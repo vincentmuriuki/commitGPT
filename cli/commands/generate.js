@@ -10,15 +10,21 @@ const command = new Command('generate')
   .alias('g')
   .description('Generate a commit message based on git diff')
   .action(async () => {
+    process.noDeprecation = true;
+    // Start the spinner with the initial message.
     const spinner = showSpinner('Fetching git diff...');
+
     try {
       const diff = await fetchGitDiff();
-      spinner.stop();
+      
+      // Update the spinner text before moving on.
       spinner.text = 'Generating commit message...';
-
+      
       const rawMessage = await generateCommitMessage(diff);
+      
+      // Mark the spinner as succeeded.
       spinner.succeed('Commit message generated successfully!');
-
+      
       const formattedMessage = formatCommitMessage(rawMessage);
       console.log(`\nYour Commit Message:\n${formattedMessage}\n\n`);
 
@@ -32,13 +38,16 @@ const command = new Command('generate')
       ]);
 
       if (shouldCommit) {
-        exec(`git commit -m "${formattedMessage.replace(/"/g, '\\"')}"`, (err, stdout, stderr) => {
-          if (err) {
-            console.error('Error committing changes:', err);
-            return;
+        exec(
+          `git commit -m "${formattedMessage.replace(/"/g, '\\"')}"`,
+          (err, stdout, stderr) => {
+            if (err) {
+              console.error('Error committing changes:', err);
+              return;
+            }
+            console.log('Commit successful!');
           }
-          console.log('Commit successful!');
-        });
+        );
       } else {
         console.log('Commit aborted by the user.');
       }
