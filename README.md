@@ -7,22 +7,22 @@ AI-powered commit message generator powered by OpenAI. Get meaningful commit mes
 ## Installation
 
 ```bash
-npx commit-ai generate  # Generate commit message
+npx @aigen/commit-gen generate  # Generate commit message
 ```
 Usage
 
 Generate Commit Message
 
-bash
-Copy
-npx commit-ai
-# or
-git gpt  # If aliased
+```bash
+npx @aigen/commit-gen
+
+// alias
+npx @aigen/commit-gen g
+```
 Configure OpenAI Key
 
 ```bash
-npx commit-ai configure
-npx commit-ai g  // use alias instead
+npx @aigen/commit-gen configure
 ```
 Stores your API key securely in `~/.env`
 
