@@ -69,7 +69,8 @@ After generating the commit message, you’ll be asked to confirm before it is c
 
 Your OpenAI API key is stored locally in `~/.env` and never shared or transmitted elsewhere.
 The tool only analyzes staged Git changes, ensuring sensitive files remain untouched.
-🤝 Contributing
+
+# 🤝 Contributing
 
 PRs are welcome! If you’d like to improve the tool, check out `CONTRIBUTING.md` for guidelines.
 
