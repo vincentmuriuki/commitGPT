@@ -45,26 +45,26 @@ export const generateCommitMessage = async (diff)=> {
   }
 };
 
-const refineWithHuggingFace = async (draft) => {
-  try {
-    const response = await axios.post(
-      huggingFaceEndpoint,
-      { inputs: `Refine this commit message: "${draft}"` },
-      { headers: { Authorization: `Bearer ${huggingFaceApiKey}` } }
-    );
+// const refineWithHuggingFace = async (draft) => {
+//   try {
+//     const response = await axios.post(
+//       huggingFaceEndpoint,
+//       { inputs: `Refine this commit message: "${draft}"` },
+//       { headers: { Authorization: `Bearer ${huggingFaceApiKey}` } }
+//     );
 
-    const refinedMessage = response.data[0]?.generated_text?.trim();
+//     const refinedMessage = response.data[0]?.generated_text?.trim();
 
-    if (!refinedMessage) {
-      throw new Error('Hugging Face returned an empty refinement.');
-    }
+//     if (!refinedMessage) {
+//       throw new Error('Hugging Face returned an empty refinement.');
+//     }
 
-    return refinedMessage;
-  } catch (error) {
-    Logger.error('Hugging Face refinement failed:', error);
-    throw error;
-  }
-};
+//     return refinedMessage;
+//   } catch (error) {
+//     Logger.error('Hugging Face refinement failed:', error);
+//     throw error;
+//   }
+// };
 
 const generateWithOpenAI = async (diff) => {
   try {

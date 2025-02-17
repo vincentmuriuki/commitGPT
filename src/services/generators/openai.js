@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 dotenv.config();
 
-const huggingFaceApiKey = process.env.HUGGINGFACE_API_KEY;
+// const huggingFaceApiKey = process.env.HUGGINGFACE_API_KEY;
 
 async function getApiKey() {
     if (!process.env.OPENAI_API_KEY) {

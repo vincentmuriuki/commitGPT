@@ -22,20 +22,22 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install Yarn
+        run: npm install -g yarn
 
-      # - name: Run Lint
-      #   run: npm run lint
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Lint
+        run: yarn run lint:fix
 
       # - name: Run Tests
-      #   run: npm test
+      #   run: yarn test
 
   publish:
     needs: build
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
-    # if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
 
@@ -45,14 +47,17 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Install Yarn
+        run: npm install -g yarn
+
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       # Uncomment if you have a build step
       # - name: Build Package
-      #   run: npm run build
+      #   run: yarn run build
 
       - name: Publish Package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish
+        run: yarn publish

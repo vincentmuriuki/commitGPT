@@ -5,8 +5,8 @@
 Whether you're a solo developer or part of a team, `commitaai` helps improve your project’s version history by maintaining clean and descriptive commit messages. It’s the perfect tool for developers who want to boost their efficiency and keep their codebase organized. 
  
 
-[![NPM Version](https://img.shields.io/npm/v/fireorm.svg?style=flat)](https://www.npmjs.com/package/commitaai)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![npm version](https://img.shields.io/npm/v/commitaai)](https://www.npmjs.com/package/commitaai)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) 
 ---
 
@@ -39,14 +39,14 @@ npm install -g commitaai
 Generate a Commit Message
 
 ```bash
-npx commitaai generate
+npx commitaai generate // youll be prompted to add your openai api key
 // or
 npx commitaai g
 ```
 
 ## Configure OpenAI API Key
 ```bash
-npx commitaai configure
+npx commitaai configure // add your api key
 ```
 
 This securely stores your API key in `~/.env`.
